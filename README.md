@@ -2,57 +2,56 @@
 
 ## Project Overview
 
-Fault Impact Footprint Mapping in Power Networks is a power-system analysis project focused on identifying and mapping the impact of faults across interconnected components of an electrical power network.
+Fault Impact Footprint Mapping in Power Networks is a graph-based simulation project that models how a fault at one location can affect other interconnected nodes in a power-network structure.
 
-The project analyzes how a fault at a particular location can affect other parts of the network and represents the resulting impact to support fault analysis and understanding of network behavior.
+The project analyzes the impact of a simulated fault based on network connectivity and distance from the fault location, and visualizes the resulting impact across the network.
 
 ## Objectives
 
-* Analyze the impact of faults within a power network.
-* Identify the network components affected by a fault.
-* Map the fault impact across interconnected network elements.
-* Provide a structured approach for analyzing fault propagation and affected areas.
-* Support better understanding of power-network fault behavior.
-
+- Model an interconnected power-network structure.
+- Simulate the impact of a fault at a selected network node.
+- Identify network nodes affected by the fault.
+- Quantify the relative voltage deviation caused by the simulated fault.
+- Classify the level of impact across affected nodes.
+- Visualize the fault impact across the network.
+  
 ## Technologies Used
 
-* MATLAB
-* Power System Analysis
-* Electrical Power Networks
-* Fault Analysis
-* Data Analysis and Visualization
-
+- Python
+- NetworkX
+- NumPy
+- Matplotlib
+- Google Colab
+- Graph-Based Network Modeling
+- Data Analysis and Visualization
+  
 ## Methodology
 
-The project follows a structured fault-impact analysis process:
+1. Create a 20-node interconnected network using NetworkX.
+2. Define Node 1 as the substation.
+3. Select Node 6 as the fault location.
+4. Calculate the normal voltage level of each node based on its shortest-path distance from the substation.
+5. Apply distance-based voltage sag factors to simulate the effect of the fault.
+6. Calculate the relative voltage deviation for each node.
+7. Classify the impact as High, Medium, or Low based on the deviation.
+8. Visualize the network and fault-impact distribution.
+## Project Structure
 
-1. Model or obtain the required power-network data.
-2. Define the fault condition and its location.
-3. Analyze the effect of the fault on interconnected network components.
-4. Identify the components affected by the fault.
-5. Generate the corresponding fault-impact information.
-6. Visualize or map the resulting fault footprint for analysis.
-
-## Project Workflow
-
-```text
-Power Network
-      ↓
-Fault Location / Fault Condition
-      ↓
-Fault Analysis
-      ↓
-Identify Affected Components
-      ↓
-Fault Impact Mapping
-      ↓
-Analysis & Visualization
-```
+fault-impact-footprint-mapping/
+├── README.md
+└── proj_fault.ipynb
 
 ## Results
 
-The project provides a method for identifying and mapping the components affected by faults in a power network. The generated results can be used to understand the extent of the fault impact and analyze the relationship between the fault location and affected network components.
+The simulation generates:
 
+- A modeled interconnected power-network graph.
+- A simulated fault at the selected fault node.
+- Normal and fault-affected voltage values for network nodes.
+- Relative voltage deviation for each node.
+- High, Medium, and Low impact classifications.
+- A visualization showing the distribution of fault impact across the network.
+- 
 ## My Contribution
 
 * Worked on the implementation of the fault-impact analysis approach.
