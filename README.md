@@ -14,7 +14,7 @@ The project analyzes the impact of a simulated fault based on network connectivi
 - Quantify the relative voltage deviation caused by the simulated fault.
 - Classify the level of impact across affected nodes.
 - Visualize the fault impact across the network.
-  
+
 ## Technologies Used
 
 - Python
@@ -24,7 +24,7 @@ The project analyzes the impact of a simulated fault based on network connectivi
 - Google Colab
 - Graph-Based Network Modeling
 - Data Analysis and Visualization
-  
+
 ## Methodology
 
 1. Create a 20-node interconnected network using NetworkX.
@@ -35,11 +35,6 @@ The project analyzes the impact of a simulated fault based on network connectivi
 6. Calculate the relative voltage deviation for each node.
 7. Classify the impact as High, Medium, or Low based on the deviation.
 8. Visualize the network and fault-impact distribution.
-## Project Structure
-
-fault-impact-footprint-mapping/
-├── README.md
-└── proj_fault.ipynb
 
 ## Results
 
@@ -51,24 +46,20 @@ The simulation generates:
 - Relative voltage deviation for each node.
 - High, Medium, and Low impact classifications.
 - A visualization showing the distribution of fault impact across the network.
-- 
+
 ## My Contribution
 
-* Worked on the implementation of the fault-impact analysis approach.
-* Worked with power-network data and fault conditions.
-* Contributed to identifying affected network components.
-* Worked on analyzing and presenting the resulting fault-impact information.
+- Worked on the implementation of the fault-impact analysis approach.
+- Worked with a simulated power-network model and fault conditions.
+- Contributed to identifying affected network components.
+- Worked on analyzing and presenting the resulting fault-impact information.
 
 ## Project Structure
 
 ```text
 fault-impact-footprint-mapping/
-│
 ├── README.md
-├── src/
-├── data/
-├── results/
-└── documentation/
+└── proj_fault.ipynb
 ```
 
 ## Applications
